@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "44138c0a-a7eb-4fe3-ab8d-10f44c33659e",
+		"name": "Data-CSV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25753366"
+	},
+	"item": [
+		{
+			"name": "/sign-in student signs in",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"{{email}}\",\n    \"password\": \"{{pass}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/sign-in",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
